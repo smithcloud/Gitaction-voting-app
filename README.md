@@ -1,1 +1,1 @@
-# github-action-vote
+# github-action-result

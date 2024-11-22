@@ -9,11 +9,11 @@ env:
   AWS_REGION: ap-northeast-2
   ECR_REPOSITORY: voting-app/repo
   ECS_CLUSTER: voting-cluster
-  ECS_SERVICE: vote
-  ECS_TD: vote
-  CONTAINER_NAME: vote
-  ECS_APP: AppECS-voting-cluster-vote
-  ECS_DG: DgpECS-voting-cluster-vote
+  ECS_SERVICE: result
+  ECS_TD: result
+  CONTAINER_NAME: result
+  ECS_APP: AppECS-voting-cluster-result
+  ECS_DG: DgpECS-voting-cluster-result
   ECS_APPSPEC: appspec.yml
 
 jobs:
