@@ -8,7 +8,7 @@ on:
 env:
   AWS_REGION: ap-northeast-2
   ECR_REPOSITORY: voting-app/repo
-  ECS_CLUSTER: voting-app-cluster
+  ECS_CLUSTER: voting-cluster
   ECS_SERVICE: vote
   ECS_TD: vote
   CONTAINER_NAME: vote
