@@ -12,8 +12,8 @@ env:
   ECS_SERVICE: vote
   ECS_TD: vote
   CONTAINER_NAME: vote
-  ECS_APP: AppECS-voting-app-cluster-vote
-  ECS_DG: DgpECS-voting-app-cluster-vote
+  ECS_APP: AppECS-voting-cluster-vote
+  ECS_DG: DgpECS-voting-cluster-vote
   ECS_APPSPEC: appspec.yml
 
 jobs:
