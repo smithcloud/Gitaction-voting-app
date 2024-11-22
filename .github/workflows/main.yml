@@ -1,4 +1,4 @@
-name: Deploy to Amazon ECS
+name: Deploy to Amazon ECS result application
 
 on:
   push:
@@ -6,15 +6,15 @@ on:
       - main
 
 env:
-  AWS_REGION: ap-northeast-2
-  ECR_REPOSITORY: voting-app/repo
-  ECS_CLUSTER: voting-cluster
-  ECS_SERVICE: result
-  ECS_TD: result
-  CONTAINER_NAME: result
-  ECS_APP: AppECS-voting-cluster-result
-  ECS_DG: DgpECS-voting-cluster-result
-  ECS_APPSPEC: appspec.yml
+  AWS_REGION: ${{ secrets.RESULT_AWS_REGION }}
+  ECR_REPOSITORY: ${{ secrets.RESULT_ECR_REPOSITORY }}
+  ECS_CLUSTER: ${{ secrets.RESULT_ECS_CLUSTER }}
+  ECS_SERVICE: ${{ secrets.RESULT_ECS_SERVICE }}
+  ECS_TD: ${{ secrets.RESULT_ECS_TD }}
+  CONTAINER_NAME: ${{ secrets.RESULT_CONTAINER_NAME }}
+  ECS_APP: ${{ secrets.RESULT_ECS_APP }}
+  ECS_DG: ${{ secrets.RESULT_ECS_DG }}
+  ECS_APPSPEC: ${{ secrets.RESULT_ECS_APPSPEC }}
 
 jobs:
   deploy:
