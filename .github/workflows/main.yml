@@ -6,15 +6,15 @@ on:
       - vote
 
 env:
-  AWS_REGION: ap-northeast-2
-  ECR_REPOSITORY: voting-app/repo
-  ECS_CLUSTER: voting-cluster
-  ECS_SERVICE: vote
-  ECS_TD: vote
-  CONTAINER_NAME: vote
-  ECS_APP: AppECS-voting-cluster-vote
-  ECS_DG: DgpECS-voting-cluster-vote
-  ECS_APPSPEC: appspec.yml
+  AWS_REGION: ${{ secrets.VOTE_AWS_REGION }}
+  ECR_REPOSITORY: ${{ secrets.VOTE_ECR_REPOSITORY }}
+  ECS_CLUSTER: ${{ secrets.VOTE_ECS_CLUSTER }}
+  ECS_SERVICE: ${{ secrets.VOTE_ECS_SERVICE }}
+  ECS_TD: ${{ secrets.VOTE_ECS_TD }}
+  CONTAINER_NAME: ${{ secrets.VOTE_CONTAINER_NAME }}
+  ECS_APP: ${{ secrets.VOTE_ECS_APP }}
+  ECS_DG: ${{ secrets.VOTE_ECS_DG }}
+  ECS_APPSPEC: ${{ secrets.VOTE_ECS_APPSPEC }}
 
 jobs:
   deploy:
